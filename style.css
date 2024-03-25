@@ -1,0 +1,228 @@
+* {
+    border-color: rgb(100, 100, 100);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 7, 52);
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(205, 205, 205);
+    color: white;
+}
+
+.color {
+    background-color: rgb(125, 125, 125);
+}
+
+/* Subheading styling */
+h3 {
+    text-align: center;
+    display: block;
+}
+
+#search-column {
+    margin-top: 20px;
+}
+
+#display-column {
+    margin-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Form container styling */
+#form-container {
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#search-form {
+    padding: 20px;
+    text-align: center;
+}
+
+#button-container {
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#buttons {
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#current-weather {
+    border-style: solid;
+    padding: 20px;
+}
+
+#current-weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-weather-info {
+    padding-top: 10px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.yellow {
+    color: lightyellow;
+}
+
+.red {
+    color: orangered;
+}
+
+#weatherforecast {
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#first-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#second-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#third-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#forth-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#fifth-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#sixth-day-forecast {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-style: solid;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-color: lightblue;
+}
+
+#first-day-date {
+    text-align: center;
+}
+
+#first-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#second-day-date {
+    text-align: center;
+}
+
+#second-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#third-day-date {
+    text-align: center;
+}
+
+#third-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#forth-day-date {
+    text-align: center;
+}
+
+#forth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#fifth-day-date {
+    text-align: center;
+}
+
+#fifth-day-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#sixth-day-date {
+    text-align: center;
+}
+
+#sixth-day-icon {
+    display: flex;
+    justify-content: center;
+}

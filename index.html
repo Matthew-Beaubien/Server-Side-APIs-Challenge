@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Webpage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+    <body>
+        <header>
+            <h1>Weather On The Web</h1>
+            <h6>Find your Forecast</h6>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div id="search-column" class="col-lg-3 col-md-12">
+                        <div id="form-container" class="color rounded">
+                            <h3>Where is your weather</h3>
+                            <form id="search-form" class="rounded">
+                                <label for="city-search">Enter a place:</label>
+                                <br>
+                                <input type="text" id="city-search" class="rounded" placeholder="Enter a City">
+                                <br>                    
+                                <button type="submit" id="search-button" class="btn btn btn-dark">Search</button>
+                                <br>
+                            </form>                    
+                        </div>
+
+                        <br>
+
+                        <div id="button-container" class="color rounded">
+                            <h3>Recent Searches</h3>
+                            <div id="buttons" class="rounded"></div>
+                        </div>
+                    </div>
+                    <div id="display-column" class="col-lg-9 col-md-12">
+                        <div id="current-weather" class="row color rounded">
+                            <h3>Current Weather</h3>
+
+                            <br></br>
+
+                            <div id="current-weather-icon" class="col-lg-6 col-md-12 rounded-left">
+                                [Current Weather Icon]
+                            </div>
+                            <div id="current-weather-info" class="col-lg-6 col-md-12 rounded-right">
+                                <ul>
+                                    <h3 id="current-city">[Selected City]</h3>
+                                    <li><div id="current-date">[Current Date]</div></li>
+                                    <li><div id="current-temperature">[Selected City's Current Temperature]</div></li>
+                                    <li><div id="current-wind">[Selected City's Current Wind]</div></li>
+                                    <li><div id="current-humidity">[Selected City's Current Humidity]</div></li>
+                                    <li><div id="current-uv-index">[Selected City's Current UV Index]</div></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div id="forecasted-weather" class="row color rounded">
+                            <h3>Weather Forecast</h3>
+
+                            <br></br>
+
+                            <div id="first-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="first-day-date">[First Day's Forecasted Date and Time]</h5>
+                                    <div id="first-day-icon">[First Day's Forecasted Icon]</div>
+                                    <li><div id="first-day-temperature">[First Day's Forecasted Temperature]</div></li>
+                                    <li><div id="first-day-wind">[First Day's Forecasted Wind]</div></li>
+                                    <li><div id="first-day-humidity">[First Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>
+
+                            <div id="second-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="second-day-date">[Second Day's Forecasted Date and Time]</h5>
+                                    <div id="second-day-icon">[Second Day's Forecasted Icon]</div>
+                                    <li><div id="second-day-temperature">[Second Day's Forecasted Temperature]</div></li>
+                                    <li><div id="second-day-wind">[Second Day's Forecasted Wind]</div></li>
+                                    <li><div id="second-day-humidity">[Second Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>
+
+                            <div id="third-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="third-day-date">[Third Day's Forecasted Date and Time]</h5>
+                                    <div id="third-day-icon">[Third Day's Forecasted Icon]</div>
+                                    <li><div id="third-day-temperature">[Third Day's Forecasted Temperature]</div></li>
+                                    <li><div id="third-day-wind">[Third Day's Forecasted Wind]</div></li>
+                                    <li><div id="third-day-humidity">[Third Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>
+
+                            <div id="forth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="forth-day-date">[Forth Day's Forecasted Date and Time]</h5>
+                                    <div id="forth-day-icon">[Forth Day's Forecasted Icon]</div>
+                                    <li><div id="forth-day-temperature">[Forth Day's Forecasted Temperature]</div></li>
+                                    <li><div id="forth-day-wind">[Forth Day's Forecasted Wind]</div></li>
+                                    <li><div id="forth-day-humidity">[Forth Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>
+
+                            <div id="fifth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="fifth-day-date">[Fifth Day's Forecasted Date and Time]</h5>
+                                    <div id="fifth-day-icon">[Fifth Day's Forecasted Icon]</div>
+                                    <li><div id="fifth-day-temperature">[Fifth Day's Forecasted Temperature]</div></li>
+                                    <li><div id="fifth-day-wind">[Fifth Day's Forecasted Wind]</div></li>
+                                    <li><div id="fifth-day-humidity">[Fifth Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>
+
+                            <div id="sixth-day-forecast" class="col-lg-5 col-md-12 rounded">
+                                <ul>
+                                    <h5 id="sixth-day-date">[Sixth Day's Forecasted Date and Time]</h5>
+                                    <div id="sixth-day-icon">[Sixth Day's Forecasted Icon]</div>
+                                    <li><div id="sixth-day-temperature">[Sixth Day's Forecasted Temperature]</div></li>
+                                    <li><div id="sixth-day-wind">[Sixth Day's Forecasted Wind]</div></li>
+                                    <li><div id="sixth-day-humidity">[Sixth Day's Forecasted Humidity]</div></li>
+                                </ul>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
